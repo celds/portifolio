@@ -28,7 +28,7 @@ export default function Home() {
       <div class="buttons">
         <a href="#/projects" data-link class="btn-primary">View Projects</a>
         <a href="#/contact" data-link class="btn-secondary">Contact Me</a>
-        <a href="./assets/CV + cover letter.pdf" target="_blank" class="btn-cv">CV/Cover letter</a>
+        <a href="./assets/cv-cover-letter.pdf" target="_blank" class="btn-cv">CV/Cover letter</a>
 
       </div>
     </div>
