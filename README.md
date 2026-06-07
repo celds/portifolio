@@ -1,6 +1,7 @@
 # Project Title
 
-Short description of what the project does or is about.
+The project is a portfolio, which shows some of the works I have done during my first
+year as a front-end developer student at Noroff.
 
 ## Features
 
@@ -55,8 +56,10 @@ BASE_URL=https://example.com/api
 - HTML
 - CSS
 - ESLint
+- HTMLHint
 - Prettier
+- code spell checker
 
 ## Author
 
-Your name or GitHub username
+Celds/celine Dahlen

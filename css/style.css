@@ -1,0 +1,356 @@
+@import url("./variables.css");
+
+
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+}
+
+body {
+  background: var(--color-background);
+  color: var(--color-text);
+  font-family: var(--font-family);
+  min-height: 100vh;
+  font-size: var(--body-text);
+}
+
+.container {
+  width: 90%;
+  max-width: var(--container-width);
+  margin: 0 auto;
+}
+
+/* header*/
+
+header {
+  background: var(--color-header-footer);
+  border-bottom: 1px solid var(--color-border);
+}
+
+nav {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  padding: var(--space-medium) 0;
+}
+
+.logo {
+  font-size: var(--h3);
+  font-weight: 700;
+  color: var(--color-text);
+}
+
+nav ul {
+  display: flex;
+  gap: var(--space-large);
+  list-style: none;
+}
+
+nav a {
+  color: var(--color-text);
+  text-decoration: none;
+  transition: var(--transition);
+}
+
+nav a:hover {
+  color: var(--color-text);
+}
+
+/* footer */
+
+footer {
+  background: var(--color-header-footer);
+  border-top: 1px solid var(--color-border);
+  text-align: center;
+  padding: var(--space-medium);
+}
+
+footer p {
+  color: var(--color-text);
+}
+
+
+
+.tag {
+  display: inline-block;
+  background: var(--color-surface-light);
+  color: var(--color-text);
+  padding: 0.5rem 1rem;
+  border-radius: 30px;
+  margin-bottom: var(--space-small);
+  font-size: var(--small-text);
+}
+
+.buttons,
+.project-links {
+  display: flex;
+  gap: var(--space-small);
+  flex-wrap: wrap;
+}
+
+/* all buttons */
+
+.btn-primary,
+.btn-secondary,
+.btn-cv,
+.github-btn,
+.demo-btn {
+  text-decoration: none;
+  padding: 0.9rem 1.8rem;
+  border-radius: var(--radius-small);
+  font-weight: 600;
+  transition: var(--transition);
+}
+
+.btn-primary
+ {
+  border: 2px solid var(--color-primary);
+  color: var(--color-text);
+}
+
+.btn-primary:hover {
+  background: var(--color-primary);
+}
+
+.btn-cv,
+.demo-btn {
+  border: 2px solid var(--color-secondary);
+  color: var(--color-text);
+}
+
+.btn-cv:hover,
+.demo-btn:hover {
+  background: var(--color-secondary);
+  color: var(--color-text);
+}
+
+.btn-secondary,
+.github-btn {
+  border: 2px solid var(--color-text);
+  color: var(--color-text);
+}
+
+.btn-secondary:hover,
+.github-btn:hover {
+  background: var(--color-text);
+  color: var(--color-background);
+}
+
+/* home page */
+
+.hero {
+  min-height: calc(100vh - 160px);
+  display: flex;
+  align-items: center;
+  padding: 4rem 0;
+}
+
+.hero-content {
+  width: 90%;
+  max-width: var(--container-width);
+  margin: auto;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  gap: 5rem;
+}
+
+.profile-image img {
+  width: 320px;
+  height: 320px;
+  object-fit: cover;
+  border-radius: var(--radius-medium);
+  border: 3px solid var(--color-border);
+}
+
+.hero-text {
+  max-width: 600px;
+}
+
+.hero-text h1 {
+  font-size: var(--h1);
+  margin-bottom: var(--space-small);
+  line-height: 1.1;
+}
+
+.hero-text p {
+  color: var(--color-text);
+  font-size: var(--large-text);
+  line-height: 1.8;
+  margin-bottom: var(--space-large);
+}
+
+.skills {
+  display: flex;
+  flex-wrap: wrap;
+  gap: var(--space-small);
+  margin-bottom: var(--space-large);
+}
+
+.skills span {
+  background: var(--color-surface-light);
+  color: var(--color-text);
+  padding: 0.7rem 1.2rem;
+  border-radius: 30px;
+  font-size: var(--small-text);
+}
+
+/* PROJECTS PAGE */
+
+.portfolio {
+  min-height: 100vh;
+  padding: 5rem 0;
+}
+
+.section-header {
+  text-align: center;
+  max-width: 700px;
+  margin: 0 auto 4rem;
+}
+
+.section-header h1 {
+  font-size: var(--h1);
+  margin: var(--space-small) 0;
+}
+
+.section-header p {
+  color: var(--color-text);
+  line-height: 1.8;
+}
+
+.projects-grid {
+  display: grid;
+  grid-template-columns: repeat(auto-fit, minmax(320px, 1fr));
+  gap: var(--space-large);
+}
+
+.project-card {
+  background: var(--color-surface);
+  border: 1px solid var(--color-border);
+  border-radius: var(--radius-medium);
+  overflow: hidden;
+  transition: var(--transition);
+}
+
+.project-card:hover {
+  border-color: var(--color-primary);
+  transform: translateY(-5px);
+}
+
+.project-image {
+  width: 100%;
+  height: 220px;
+  object-fit: cover;
+}
+
+.project-content {
+  padding: var(--space-medium);
+}
+
+.project-content h2 {
+  font-size: var(--h2);
+  margin-bottom: var(--space-small);
+}
+
+.project-content p {
+  color: var(--color-text);
+  line-height: 1.7;
+  margin-bottom: var(--space-medium);
+  font-size: var(--large-text)
+}
+
+/* contact page */
+
+.contact-page {
+  min-height: 80vh;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  padding: 4rem 1rem;
+}
+
+.contact-card {
+  width: 100%;
+  max-width: 700px;
+  background: var(--color-surface);
+  border: 1px solid var(--color-border);
+  border-radius: var(--radius-large);
+  padding: var(--space-xlarge);
+  text-align: center;
+}
+
+.contact-card h1 {
+  font-size: var(--h1);
+  margin: var(--space-small) 0;
+}
+
+.contact-intro {
+  color: var(--color-text);
+  line-height: 1.8;
+  margin-bottom: 2.5rem;
+}
+
+.contact-info {
+  display: flex;
+  flex-direction: column;
+  gap: var(--space-medium);
+  margin-bottom: 2.5rem;
+}
+
+.contact-item {
+  background: var(--color-surface-light);
+  padding: var(--space-small);
+  border-radius: 12px;
+}
+
+.contact-label {
+  display: block;
+  color: var(--color-primary);
+  font-weight: 600;
+  margin-bottom: 0.5rem;
+}
+
+.contact-item a,
+.contact-item p {
+  color: var(--color-text);
+  text-decoration: none;
+  font-size: var(--large-text)
+}
+
+/* about page */
+
+.about-page {
+  min-height: 80vh;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  padding: 4rem 1rem;
+}
+
+.about-card {
+  width: 100%;
+  max-width: 800px;
+  background: var(--color-surface);
+  border: 1px solid var(--color-border);
+  border-radius: var(--radius-large);
+  padding: var(--space-xlarge);
+}
+
+.about-card h1 {
+  font-size: var(--h1);
+  margin: var(--space-small) 0 var(--space-large);
+  text-align: center;
+}
+
+.about-card p {
+  color: var(--color-text);
+  line-height: 1.8;
+  margin-bottom: var(--space-medium);
+  font-size: var(--large-text);
+  text-align: left;
+}
+
+.about-card p:last-child {
+  margin-bottom: 0;
+}
