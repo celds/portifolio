@@ -1,13 +1,17 @@
-# Project Title
+# Portfolio
 
 The project is a portfolio, which shows some of the works I have done during my first
-year as a front-end developer student at Noroff.
+year as a front-end developer student at Noroff.The purpose of this project is to show
+off the work and skills I have learned as a student at Noroff. 
+
+## live demo
+https://celds.github.io/Portfolio/
 
 ## Features
 
-- Feature 1
-- Feature 2
-- Feature 3
+- Downloadable CV and cover letter
+- single page application
+- contact, about me and project pages
 
 ## Prerequisites
 
@@ -15,6 +19,9 @@ year as a front-end developer student at Noroff.
 - npm
 
 ## Getting Started
+
+- Install Live Server extension
+- Click “Go live” and it will open automatically
 
 ### Installation
 
@@ -63,3 +70,4 @@ BASE_URL=https://example.com/api
 ## Author
 
 Celds/celine Dahlen
+https://github.com/celds
